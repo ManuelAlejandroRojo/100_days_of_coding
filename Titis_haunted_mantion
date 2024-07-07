@@ -1,0 +1,48 @@
+print('''
+*******************************************************************************
+ 
+
+                                              ,           ^'^  _
+                                              )               (_) ^'^
+         _/\_                    .---------. ((        ^'^
+         (('>                    )`'`'`'`'`( ||                 ^'^
+    _    /^|                    /`'`'`'`'`'`\||           ^'^
+    =>--/__|m---               /`'`'`'`'`'`'`\|
+         ^^           ,,,,,,, /`'`'`'`'`'`'`'`\      ,
+                     .-------.`|`````````````|`  .   )
+                    / .^. .^. \|  ,^^, ,^^,  |  / \ ((
+                   /  |_| |_|  \  |__| |__|  | /,-,\||
+        _         /_____________\ |")| |  |  |/ |_| \|
+       (")         |  __   __  |  '==' '=='  /_______\     _
+      (' ')        | /  \ /  \ |   _______   |,^, ,^,|    (")
+       \  \        | |--| |--| |  ((--.--))  ||_| |_||   (' ')
+     _  ^^^ _      | |__| |("| |  ||  |  ||  |,-, ,-,|   /  /
+   ,' ',  ,' ',    |           |  ||  |  ||  ||_| |_||   ^^^
+.,,|RIP|,.|RIP|,.,,'==========='==''=='==''=='=======',,....,,,,.,ldb
+*******************************************************************************
+''')
+print("Bienvenido a la mansión embrujada de Titi.")
+print("Tu misión es encontrar el tesoro de Titi, el bull dog francés más adinerado de la historia. Comenzaremos el juego en la entrada de la gran mansión, que abre sus puertas para ti. \n") 
+
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+print("Estás en la entrada de la mansión, tienes dos opciones, ir al cuarto o ir al pasillo principal. ¿Qué eliges?")
+choice1 = input("Escribe 'cuarto' o 'pasillo' para continuar. \n")
+if choice1 == 'cuarto':
+  choice2 = input("Has llegado al cuarto, hay dos retratos con un botón cada uno. Uno de ellos tiene la foto de Ramon y la otra de Alejandro. ¿Cuál eliges? Escribe 'ramon' o 'alejandro' para continuar. \n").lower()
+  if choice2 == 'ramon':
+    choice3 = input("Has llegado a la sala del tesoro, hay tres puertas con diferentes colores. ¿Qué eliges? Escribe 'rojo', 'amarillo' o 'azul' para continuar. \n")
+    if choice3 == 'rojo':
+      print("Has encontrado el tesoro de Titi, ¡Felicidades!")
+    elif choice3 == 'amarillo':
+      print("Has caído en un pozo lleno de lagartijas, ¡Game Over!")
+    elif choice3 == 'azul':
+      print("Has caído en un pozo lleno de serpientes, ¡Game Over!")
+    else:
+      print("Has elegido una puerta que no existe, ¡Game Over!")
+  else:
+    print("Alejandro es cómplice de Titi. Te ha llevado con él a la sala de juegos en donde Titi te ha matado. Game Over.")
+else:
+  print("Has muerto porque Titi te ha comido. Game Over.")
